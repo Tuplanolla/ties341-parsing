@@ -1,0 +1,20 @@
+name:                parsing
+version:             0.0.0
+synopsis:            Example for the course TIES341
+description:         Parsing with parser combinators!
+license:             GPL-3
+license-file:        LICENSE
+author:              Sampsa Kiiskinen
+maintainer:          tuplanolla@gmail.com
+category:            Education
+build-type:          Simple
+extra-source-files:  ParsenatorComments.hs, ParsenatorCode.hs
+cabal-version:       >=1.10
+
+executable parsenator
+  main-is:             Parsenator.hs
+  other-extensions:    FlexibleContexts, NoMonomorphismRestriction
+  build-depends:       base >=4.8 && <5.0,
+                       mtl >=2.2 && <3.0,
+                       megaparsec >=4.0 && <5.0
+  default-language:    Haskell2010
